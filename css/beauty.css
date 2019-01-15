@@ -1,0 +1,259 @@
+@import url(../css/common.css);
+body {
+  margin: 0 auto; }
+
+img, a {
+  display: block; }
+
+section {
+  width: 7.5rem;
+  margin: 0 auto; }
+
+.parent {
+  position: relative;
+  width: 7.5rem;
+  margin: 0 auto;
+  height: 100%; }
+
+.noc-box {
+  display: none;
+  z-index: 1000;
+  width: 2rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  opacity: 0;
+  background-color: rgba(153, 153, 153, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -1rem;
+  margin-top: -0.4rem; }
+  .noc-box .noc {
+    width: 1.8rem;
+    height: 0.6rem;
+    margin: 0.1rem auto;
+    font-size: .3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    line-height: 0.6rem;
+    background-color: rgba(51, 51, 51, 0.5); }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.5rem;
+  height: 0.8rem;
+  background-color: #fff;
+  line-height: .8rem;
+  margin: 0 auto;
+  padding: 0 .34rem;
+  display: flex;
+  justify-content: space-between; }
+  header .i {
+    font-size: .4rem; }
+  header h3 {
+    font-size: .3rem;
+    font-weight: 400; }
+
+.mei-tit {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.8rem; }
+
+.mei-gif {
+  padding: .12rem 0; }
+
+.cont-right {
+  border-right: 1px solid rgba(230, 230, 230, 0.7); }
+
+.mei-top {
+  width: 6.9rem;
+  margin: 0 auto; }
+  .mei-top .top-tit {
+    width: 6.9rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    font-size: 0.4rem; }
+  .mei-top .top-cont {
+    width: 6.9rem;
+    height: .5rem;
+    height: 2.5rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    border: 1px solid rgba(230, 230, 230, 0.7);
+    border-bottom: 0;
+    display: flex; }
+    .mei-top .top-cont .cont-top {
+      width: 2.3rem;
+      border-bottom: 1px solid rgba(230, 230, 230, 0.7);
+      padding-top: .2rem;
+      padding-left: .2rem; }
+      .mei-top .top-cont .cont-top .cont-top-tit {
+        font-size: .28rem;
+        font-weight: 400; }
+      .mei-top .top-cont .cont-top .cont-top-num {
+        font-size: .2rem;
+        color: #666; }
+      .mei-top .top-cont .cont-top .cont-top-img {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin: 0.1rem auto; }
+  .mei-top .bottom-cont {
+    width: 6.9rem;
+    height: 1.8rem;
+    margin: 0 auto;
+    border: 1px solid rgba(230, 230, 230, 0.7);
+    border-top: 0;
+    display: flex; }
+    .mei-top .bottom-cont .bottom-box1 {
+      width: 2.4rem;
+      padding-left: .2rem;
+      padding-top: 0.5rem; }
+      .mei-top .bottom-cont .bottom-box1 .cont-tit {
+        font-size: .28rem;
+        font-weight: 400; }
+      .mei-top .bottom-cont .bottom-box1 .cont-num {
+        font-size: .2rem;
+        color: #666; }
+    .mei-top .bottom-cont .bottom-box2 {
+      width: 1.4rem;
+      height: 1.4rem;
+      line-height: 1.8rem;
+      flex-grow: 1;
+      margin: 0.2rem auto; }
+
+.new-cheap {
+  width: 6.9rem;
+  margin: 0 auto; }
+  .new-cheap .top-tit {
+    width: 6.9rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    font-size: 0.4rem; }
+  .new-cheap .cheap-cont {
+    width: 6.9rem;
+    padding-top: .1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .new-cheap .cheap-cont li {
+      width: 30%;
+      height: 4.1rem;
+      border: 1px solid rgba(230, 230, 230, 0.7);
+      margin-bottom: .15rem;
+      border-radius: 0.2rem; }
+      .new-cheap .cheap-cont li .cheap-main .new-img-box {
+        position: relative; }
+        .new-cheap .cheap-cont li .cheap-main .new-img-box .top-ico {
+          width: 0.7rem;
+          height: 0.7rem;
+          position: absolute;
+          top: 0;
+          right: 0; }
+        .new-cheap .cheap-cont li .cheap-main .new-img-box .bottom-ico {
+          width: 0.7rem;
+          height: 0.7rem;
+          position: absolute;
+          left: 0;
+          bottom: .3rem; }
+      .new-cheap .cheap-cont li .cheap-main .cheap-tit {
+        width: 100%;
+        height: 0.64rem;
+        font-size: .24rem;
+        line-height: .32rem;
+        color: #696969;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        margin: 0.05rem auto; }
+      .new-cheap .cheap-cont li .cheap-main .cheap-pri-box {
+        color: #ea4141;
+        height: .38rem;
+        margin: 0.1rem 0;
+        text-align: center;
+        line-height: .38rem; }
+        .new-cheap .cheap-cont li .cheap-main .cheap-pri-box .cheap-pri {
+          font-size: 0.3rem;
+          text-align: center;
+          line-height: .38rem;
+          height: .38rem;
+          margin: .1rem 0;
+          overflow: hidden; }
+        .new-cheap .cheap-cont li .cheap-main .cheap-pri-box .cheap-box {
+          padding: 0 .06rem;
+          background-color: red;
+          margin-left: .1rem;
+          font-size: 0.18rem;
+          line-height: 0.28rem;
+          color: #fff;
+          border-radius: 0.22rem; }
+      .new-cheap .cheap-cont li .cheap-car {
+        width: 100%;
+        height: 0.6rem;
+        display: flex;
+        align-content: space-between;
+        background-color: #fff;
+        font-size: .2rem;
+        border-top: 1px solid rgba(230, 230, 230, 0.7);
+        line-height: 0.6rem;
+        text-align: center; }
+        .new-cheap .cheap-cont li .cheap-car .car-txt {
+          margin-left: .2rem;
+          text-align: center; }
+        .new-cheap .cheap-cont li .cheap-car .car-img {
+          width: 0.4rem;
+          height: auto;
+          margin: 0.1rem; }
+
+footer {
+  width: 7.5rem;
+  height: 0.94rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3.75rem; }
+  footer .foot {
+    max-width: 7.5rem;
+    width: 100%;
+    height: 0.94rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center; }
+    footer .foot div {
+      width: 25%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center; }
+      footer .foot div a {
+        text-align: center; }
+        footer .foot div a .img {
+          margin: auto; }
+        footer .foot div a .txt {
+          margin: auto;
+          text-align: center; }
+      footer .foot div .c2 {
+        margin-left: -0.12rem; }
+      footer .foot div .c3 {
+        margin-left: -0.04rem; }
+
+footer p:nth-child(1) {
+  height: 0.48rem;
+  width: 0.48rem;
+  margin-top: 0.01rem; }
+
+footer p:nth-child(2) {
+  font-size: .18rem; }
+
+footer i:nth-child(1) {
+  font-size: 0.47rem; }
+
+/*# sourceMappingURL=beauty.css.map */

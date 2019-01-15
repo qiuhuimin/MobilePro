@@ -1,0 +1,69 @@
+@import url(../css/common.css);
+@import url(../css/login.css);
+button {
+  border: none;
+  outline: none; }
+
+.yan-pa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  display: none; }
+  .yan-pa .yan {
+    z-index: 100;
+    position: fixed;
+    border-radius: .1rem;
+    width: 83%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+    padding: .4rem .3rem .24rem; }
+    .yan-pa .yan .clo {
+      width: 1.6rem;
+      height: 0.5rem;
+      color: #fff;
+      background-color: #7debfa;
+      border-radius: 10%;
+      position: absolute;
+      bottom: .1rem;
+      left: 50%;
+      margin-left: -0.8rem; }
+    .yan-pa .yan .y-line {
+      margin: 0.1rem auto;
+      width: 100%;
+      height: 1px;
+      background-color: #695b5b; }
+    .yan-pa .yan .y-ran {
+      margin: .26rem auto;
+      font-size: .5rem;
+      color: #665555;
+      letter-spacing: .1rem; }
+
+.app .ipt-box {
+  position: relative; }
+  .app .ipt-box .verify-btn {
+    position: absolute;
+    right: 0;
+    min-width: 1.5rem;
+    height: .55rem;
+    font-size: .24rem;
+    color: gray;
+    border-left: 1px solid #fff;
+    padding: 0 .3rem;
+    background: transparent; }
+
+.op-nav .forget {
+  display: flex; }
+  .op-nav .forget input {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: .1rem; }
+
+/*# sourceMappingURL=register.css.map */

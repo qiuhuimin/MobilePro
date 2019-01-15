@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import "../../../css/common.css";
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/*用户信息*/
+.profile {
+    width: 100%;
+    height: 4.28rem;
+    // margin:0 auto;
+    background: url(../../../images/person/person-02.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 0.4rem;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.profile .profile-top {
+    // margin-top:0.6rem;
+    width: 100%;
+}
+
+.profile .profile-user-info {
+    display: flex;
+    justify-content: space-around;
+    width: 4rem;
+}
+
+.profile .user-img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.profile .user-name {
+    display: flex;
+    align-items: center;
+    width: 1.9rem;
+}
+
+.profile .user-name p {
+    width: 3rem;
+    font-size: 0.36rem;
+}
+
+.profile .proile-stat {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile .proile-stat a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.profile .proile-stat a span {
+    font-size: 0.24rem;
+}
+
+// 我的订单
+.p-item {
+    margin: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.02rem solid #D8D8D8;
+}
+
+.p-item .p-item-title {
+    margin-bottom: 0.16rem;
+    font-size: 0.4rem;
+    font-weight: 500;
+}
+
+.p-item .p-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-item .p-nav div {
+    font-size: 0.24rem;
+    // text-align:center;
+}
+
+.p-item .p-nav a {
+    width: 0.96rem;
+    text-align: center;
+}
+
+.p-item .p-nav a i {
+    font-size: 0.5rem;
+}
+
+.p-item .item-group {
+    display: flex;
+    a {
+        display: block;
+        width: 20%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            display:flex;
+            flex-flow:column wrap;
+            align-items:center;
+        }
+    }
+
+    a i {
+        font-size: 0.5rem;
+    }
+}
+.calendar{
+    margin:0.4rem;
+    img{
+        vertical-align: middle;
+    }
+}
+.lr {
+    padding-bottom: 0.4rem;
+    margin: 0.4rem;
+    border-bottom: 0.02rem solid #D8D8D8;
+}
+
+// 下载app
+.download {
+    color: #959595;
+    margin: 0.3rem;
+    text-align: center;
+
+    p {
+        font-size: 0.24rem;
+    }
+
+    a {
+        height: 0.8rem;
+        color: white;
+        background: black;
+        display: block;
+        margin-top: 0.1rem;
+        border-radius: 0.02rem;
+        line-height: 0.8rem;
+        font-size: 0.24rem;
+    }
+}
+
+// 尾部
+footer {
+    max-width: 750px;
+    // margin:0 auto;
+    height: 0.94rem;
+}
+
+footer .foot {
+    max-width: 750px;
+    width: 100%;
+    height: 0.94rem;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    z-index: 1;
+    transform:translateX(-50%);
+}
+
+footer .foot div {
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot div a {
+    text-align: center;
+}
+
+footer .foot div .c2 {
+    margin-left: -0.12rem;
+}
+
+footer .foot div .c3 {
+    margin-left: -0.04rem;
+}
+
+footer p:nth-child(1) {
+    height: 0.48rem;
+    width: 0.48rem;
+    margin-top: 0.01rem;
+}
+
+footer p:nth-child(2) {
+    font-size: .18rem;
+}
+
+footer i:nth-child(1) {
+    font-size: 0.47rem;
+}

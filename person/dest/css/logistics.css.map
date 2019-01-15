@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACQ,oCAAyB;AAEjC,IAAK;EACD,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM",
+"sources": ["../../src/css/logistics.scss"],
+"names": [],
+"file": "logistics.css"
+}

@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@import url(../../../css/common.css);
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 0.3rem; }
+
+/*固定定位搜索框*/
+.fsearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: none; }
+  .fsearch .search {
+    padding: 0.17rem 0.27rem; }
+
+.search {
+  display: flex;
+  height: 0.8rem;
+  font-size: 0.3rem;
+  color: black;
+  background: rgba(250, 250, 250, 0.9);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .search a {
+    width: 0.36rem;
+    height: 0.36rem; }
+
+.bannerbox {
+  width: 100%; }
+  .bannerbox .banner .swiper-slide img {
+    border-radius: 0.2rem; }
+  .bannerbox .swiper-pagination {
+    width: 100%;
+    height: 0.3rem;
+    position: relative; }
+    .bannerbox .swiper-pagination span {
+      width: 0.2rem;
+      height: 0.05rem;
+      border-radius: 0;
+      margin: 0 0.05rem;
+      background: gray; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  nav a {
+    display: flex;
+    width: 30%;
+    height: 1rem;
+    border-radius: 0.2rem;
+    font-size: 0.24rem;
+    font-weight: 700;
+    line-height: 1rem;
+    border: 1px solid #e6e6e6;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.2rem; }
+    nav a img {
+      width: 0.8rem;
+      height: 0.8rem; }
+    nav a span {
+      width: 0.96rem; }
+
+.yh {
+  overflow: hidden; }
+
+.hot {
+  padding-top: 0.2rem; }
+  .hot h2 {
+    height: 0.56rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.2rem;
+    padding: 0; }
+
+.hot-cont {
+  width: 100%;
+  height: 4.11rem;
+  overflow: hidden; }
+  .hot-cont ul {
+    display: flex; }
+    .hot-cont ul li .hot-items {
+      margin-right: 0.16rem;
+      width: 2.18rem;
+      background: #fafafa;
+      border-radius: 0.2rem;
+      border: 1px solid rgba(230, 230, 230, 0.5); }
+      .hot-cont ul li .hot-items a .hot-img {
+        width: 2.18rem;
+        height: 2.18rem; }
+      .hot-cont ul li .hot-items a .hot-text {
+        text-align: center;
+        font-size: 0.24rem; }
+        .hot-cont ul li .hot-items a .hot-text p {
+          margin: 0.1rem 0; }
+        .hot-cont ul li .hot-items a .hot-text .hot-info {
+          font-size: 0.26rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          padding: 0 .05rem;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical; }
+        .hot-cont ul li .hot-items a .hot-text .hot-desc {
+          text-align: left;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          padding: 0 .05rem;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; }
+        .hot-cont ul li .hot-items a .hot-text .hot-price {
+          color: #ea4141;
+          font-size: 0.3rem; }
+
+.new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .new .pagination {
+    font-size: 0.25rem;
+    width: 1rem;
+    text-align: right;
+    color: gray; }
+    .new .pagination span:nth-child(1) {
+      color: black;
+      font-size: 0.3rem;
+      font-weight: 700; }
+
+.newshop .swiper-slide {
+  background-color: #fafafa; }
+.newshop .new-img {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 0 auto;
+  background: white; }
+.newshop .new-text {
+  font-size: 0.28rem; }
+  .newshop .new-text p {
+    font-weight: 700; }
+  .newshop .new-text p:nth-child(2) {
+    width: 5.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400; }
+.newshop .swiper-pagination {
+  top: -2rem;
+  right: 0;
+  width: 2rem;
+  z-index: 10;
+  color: black;
+  font-size: 1rem; }
+
+/*人气榜*/
+.moods .moods-title {
+  line-height: 1rem;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .moods .moods-title h2 {
+    font-size: 0.4rem; }
+  .moods .moods-title .pagination {
+    font-size: 0.26rem;
+    color: gray;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 80%; }
+    .moods .moods-title .pagination span:nth-child(1) {
+      font-size: 0.34rem;
+      color: black;
+      font-weight: 700; }
+.moods .moodsbanner .swiper-slide {
+  height: 8.9rem;
+  background: url(../../../images/dq/jdq-10.png) center center/cover no-repeat; }
+  .moods .moodsbanner .swiper-slide .moods-mr {
+    width: 5.6rem;
+    height: 0.9rem;
+    background: rgba(0, 0, 0, 0.25);
+    margin: .5rem auto .3rem auto;
+    font-size: 0.56rem;
+    font-weight: 700;
+    color: white;
+    text-align: center; }
+  .moods .moodsbanner .swiper-slide .moods-cont {
+    width: 6.5rem;
+    margin: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    background-color: white; }
+    .moods .moodsbanner .swiper-slide .moods-cont li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.2rem 0; }
+      .moods .moodsbanner .swiper-slide .moods-cont li a .moods-pm {
+        width: 0.3rem;
+        height: 0.3rem;
+        text-align: center;
+        line-height: 0.3rem;
+        color: white;
+        border-radius: 50%;
+        background: #E5C88E;
+        margin-right: 0.2rem; }
+      .moods .moodsbanner .swiper-slide .moods-cont li a .moods-img {
+        width: 1rem;
+        height: 1rem; }
+      .moods .moodsbanner .swiper-slide .moods-cont li a .moods-info {
+        width: 4.6rem;
+        font-size: 0.3rem; }
+        .moods .moodsbanner .swiper-slide .moods-cont li a .moods-info h2 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: .3rem;
+          line-height: .5rem;
+          height: .5rem;
+          color: #191919; }
+        .moods .moodsbanner .swiper-slide .moods-cont li a .moods-info .moods-info-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+      .moods .moodsbanner .swiper-slide .moods-cont li a .addshop {
+        width: 0.35rem;
+        height: 0.35rem; }
+.moods .moodsbanner .moods-lastimg {
+  height: 8.9rem;
+  background: url(../../../images/dq/jdq-11.png) center center/cover no-repeat; }
+
+/*品质好物*/
+.shopgood {
+  padding: 0.2rem 0;
+  font-size: 0.4rem;
+  font-weight: 700; }
+  .shopgood div:nth-child(1) {
+    padding-bottom: 0.2rem; }
+  .shopgood .shopgood-img {
+    width: 100%; }
+    .shopgood .shopgood-img img {
+      border-radius: 0.2rem; }
+
+/*人美也要多读书*/
+.study {
+  margin: 0.2rem 0; }
+  .study img {
+    border-radius: 0.2rem; }
+
+/*热门品牌*/
+.hot-shopbox h2 {
+  line-height: 0.56rem;
+  margin: 0.2rem 0;
+  font-size: 0.4rem; }
+.hot-shopbox .hot-shops {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .hot-shopbox .hot-shops .hot-items {
+    width: 3.35rem;
+    height: 3.7rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: url(../../../images/dq/jdq-14.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .hot-shopbox .hot-shops .hot-items a {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .hot-shopbox .hot-shops .hot-items a .hot-items-info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .hot-shopbox .hot-shops .hot-items a .hot-items-info .hot-items-img {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 0.1rem;
+          overflow: hidden;
+          border: 1px solid rgba(230, 230, 230, 0.5);
+          transform: translateY(18%); }
+        .hot-shopbox .hot-shops .hot-items a .hot-items-info .hot-items-text {
+          width: 100%;
+          height: 1.2rem;
+          background: rgba(255, 255, 255, 0.7);
+          font-size: 0.23rem;
+          text-align: center;
+          padding: 0.2rem 0; }
+          .hot-shopbox .hot-shops .hot-items a .hot-items-info .hot-items-text p:nth-child(1) {
+            font-size: 0.3rem;
+            font-weight: 700; }
+  .hot-shopbox .hot-shops .hot-items:nth-child(2) {
+    background: url(../../../images/dq/jdq-15.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .hot-shopbox .hot-shops .hot-items:nth-child(3) {
+    background: url(../../../images/dq/jdq-16.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .hot-shopbox .hot-shops .hot-items:nth-child(4) {
+    background: url(../../../images/dq/jdq-17.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+/*新奇体验*/
+.newness .newness-title {
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between; }
+  .newness .newness-title h2 {
+    font-size: 0.4rem;
+    font-weight: 400;
+    color: #555353; }
+  .newness .newness-title .pagination {
+    line-height: 0.6rem;
+    text-align: right;
+    width: 1rem;
+    font-size: 0.24rem;
+    color: gray; }
+    .newness .newness-title .pagination span:nth-child(1) {
+      color: black;
+      font-size: 0.26rem; }
+.newness .newness-banner .swiper-wrapper .swiper-slide .newness-content {
+  display: block;
+  border-radius: 0.2rem;
+  border: 1px solid #e6e6e6;
+  padding: 0.2rem;
+  background: #fafafa; }
+  .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #e6e6e6; }
+    .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-header .header-left {
+      display: flex;
+      align-items: center; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-header .header-left .user-name {
+        margin: 0 0.1rem; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-header .header-left .user-img {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        overflow: hidden; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-header .header-left .user-img2 {
+        width: 0.3rem;
+        height: 0.3rem; }
+  .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text {
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: space-between; }
+    .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-img {
+      width: 2.3rem;
+      height: 2.3rem; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-img img {
+        border-radius: 0.1rem; }
+    .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-cont {
+      width: 4rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-cont div:nth-child(1) p {
+        font-size: 0.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden; }
+      .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-cont div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 3rem; }
+        .newness .newness-banner .swiper-wrapper .swiper-slide .newness-content .newness-text .newness-text-cont div:nth-child(2) span {
+          height: 0.25rem;
+          display: block;
+          border-radius: 0.2rem;
+          background: #e6e6e6;
+          padding: 0 0.1rem;
+          font-size: 0.14rem; }
+
+/*热销推荐*/
+.sell h2.sell-title {
+  font-size: 0.4rem;
+  margin: 0.2rem 0; }
+.sell .sell-shops {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .sell .sell-shops .sell-item {
+    background-color: #fafafa;
+    border: 1px solid rgba(230, 230, 230, 0.5);
+    border-radius: 0.2rem;
+    width: 3.3rem;
+    margin-bottom: 0.25rem; }
+    .sell .sell-shops .sell-item a .sell-item-img {
+      width: 2.8rem;
+      height: 2.8rem;
+      margin: 0.2rem auto; }
+      .sell .sell-shops .sell-item a .sell-item-img img {
+        border-radius: 0.2rem;
+        overflow: hidden; }
+    .sell .sell-shops .sell-item a .sell-item-info {
+      font-size: 0.24rem;
+      padding: 0 0.2rem;
+      width: auto;
+      padding-top: 0.15rem; }
+      .sell .sell-shops .sell-item a .sell-item-info p:nth-child(1) {
+        font-size: 0.26rem;
+        font-weight: 700; }
+      .sell .sell-shops .sell-item a .sell-item-info p:nth-child(2) {
+        overflow: hidden;
+        text-align: left;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        color: #6e6e6e;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+    .sell .sell-shops .sell-item .sell-item-bottom {
+      font-size: 0.18rem;
+      color: gray;
+      padding: 0 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .sell .sell-shops .sell-item .sell-item-bottom .sell-item-bottom-left p:nth-child(1) {
+        font-size: 0.22rem;
+        color: red; }
+      .sell .sell-shops .sell-item .sell-item-bottom .sell-addshopcar {
+        width: 0.42rem;
+        height: 0.42rem; }
+
+.shoptx {
+  width: 2rem;
+  height: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(51, 50, 50, 0.8);
+  z-index: 20;
+  font-size: 0.26rem;
+  color: white;
+  line-height: 0.8rem;
+  text-align: center;
+  border: 0.1rem solid rgba(206, 201, 201, 0.5);
+  display: none; }
+
+/*# sourceMappingURL=dq.css.map */
